@@ -1,0 +1,38 @@
+.main-header {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.skin-green-light .main-header .logo .logo-lg img {
+  vertical-align:baseline;
+}
+
+.main-sidebar, .left-side {
+  padding-top: 52px;
+}
+
+.content-header>.breadcrumb {
+  float:none;
+  position:static;
+}
+
+/*navbar user-status*/
+.user-status {
+  margin:15px 0px 15px 10px;
+}
+
+/*navbar top links-group*/
+.navbar .links-group {
+  margin:15px 10px 15px 0px;
+}
+.navbar .links-group ul {
+  margin:0px;
+  padding:0px;
+}
+.navbar .links-group ul li {
+  list-style-type: none;
+  float:left;
+}
+.navbar .links-group ul li a {
+  margin-right:10px;
+}

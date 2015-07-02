@@ -2,11 +2,8 @@
  * Skin: Green
  * -----------
  */
-.skin-green-light .main-header {
-  border-bottom-color: #7ac043;
-}
 .skin-green-light .main-header .navbar {
-  background-color: #fff;
+  background-color: #00a65a;
 }
 .skin-green-light .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -45,17 +42,16 @@
   }
 }
 .skin-green-light .main-header .logo {
-  background-color: #d8edc8;
+  background-color: #00a65a;
   color: #ffffff;
   border-bottom: 0px solid transparent;
 }
 .skin-green-light .main-header .logo:hover {
-  background-color: #f4f4f4;
+  background-color: #00a157;
 }
 .skin-green-light .main-header li.user-header {
   background-color: #00a65a;
 }
-
 .skin-green-light .content-header {
   background: transparent;
 }
