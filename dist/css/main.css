@@ -36,3 +36,63 @@
 .navbar .links-group ul li a {
   margin-right:10px;
 }
+
+/**************************************************************
+**************************Login page***************************
+**************************************************************/
+.login-page .container {
+  width: 960px;
+}
+
+.login-page .container {
+  background-color: #fff;
+}
+
+.login-page header {
+  background-color: #fff;
+  border-bottom: 5px solid #7ac043;
+}
+
+.login-page .middle {
+  background-color: #fff;
+  padding:100px 0px;
+  margin-right:300px;
+  border-right: 2px solid  #7ac043;
+}
+
+.login-page header .logo {
+  padding:15px 0px;
+}
+.login-page header .title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding:25px 0px;
+}
+
+.login-page form {
+  width:400px;
+  margin:0 auto;
+  border: 1px solid #ddd;
+  padding:5px 10px 10px 5px;
+}
+.login-page form .form-group {
+  margin-bottom: 5px;
+}
+
+.login-page form .form-header {
+  margin-bottom: 10px;
+}
+.login-page form .logo {
+  padding:0px;
+}
+
+.login-page form .title {
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.login-page form .description {
+  text-align: center;
+  margin-top: 5px;
+}
