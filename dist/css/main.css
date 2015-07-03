@@ -44,6 +44,9 @@
   width: 960px;
 }
 
+.login-page {
+  background-color:#f9fafc;
+}
 .login-page .container {
   background-color: #fff;
 }
@@ -95,4 +98,14 @@
 .login-page form .description {
   text-align: center;
   margin-top: 5px;
+}
+
+.login-page .footer {
+  padding:20px 0px;
+  margin:0px 10px;
+  border-top:1px solid #7ac043;
+}
+.login-page .footer a {
+  display: inline-block;
+  margin-right: 20px;
 }
