@@ -38,6 +38,65 @@
 }
 
 /**************************************************************
+**************************Table styles***************************
+**************************************************************/
+table {
+  margin-top: 20px;
+}
+
+table thead .sorting, table thead .sorting-asc, table thead .sorting-desc, table thead .sorting-asc_disabled, table thead .sorting-desc_disabled {
+  cursor: pointer;
+  position: relative;
+}
+
+table thead  tr  th {
+  padding-right: 30px !important;
+}
+table thead .sorting:after, table thead .sorting-asc:after, table thead .sorting-desc:after {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  font-family: 'Glyphicons Halflings';
+  opacity: 0.5;
+}
+table thead .sorting:after {
+  opacity: 0.2;
+  content: "\e150";
+}
+table thead .sorting-desc:after {
+  content: "\e156";
+}
+table thead .sorting-asc:after {
+  content: "\e155";
+}
+
+
+
+/*table links group*/
+/*table pagination*/
+.table-links-group ul,
+.table-pagination ul  {
+  padding:0px;
+  margin:0px;
+}
+
+.table-links-group ul li,
+.table-pagination ul li {
+  list-style-type: none;
+  float:left;
+  margin-right: 20px;
+}
+
+.table-pagination ul li {margin-right: 10px;}
+.table-pagination ul {
+  float:right;
+  margin-bottom:0px;
+}
+
+
+
+/**************************************************************
 **************************Login page***************************
 **************************************************************/
 .login-page .container {
