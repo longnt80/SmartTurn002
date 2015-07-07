@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SmartTurn</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.4 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+    <link href="dist/css/skins/skin-green-light.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+  -->
+  <body class="skin-green-light pop-up">
+    <div class="wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">Filter by</h3>
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                    <table class="table table-bordered table-condensed table-striped" id="table_id" class="display">
+                      <tbody>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row"><label for="someid">Bill to city</label></th>
+                          <td>
+                            <form class="form-inline">
+                              <div class="form-group">
+                                <select id="someid" name="something" class="form-control" disabled>
+                                  <option value="1">matches</option>
+                                  <option value="2">is empty</option>
+                                  <option value="3">is not empty</option>
+                                  <option selected="selected" value="4">in range</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="123">From</label>
+                                <input type="email" class="form-control" id="123" disabled>
+                              </div>
+                              <div class="form-group">
+                                <label for="123">To</label>
+                                <input type="email" class="form-control" id="123" disabled>
+                              </div>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Bill to postal code</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Bill to state</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Created by</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Date created</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Due date</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">External #</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">SO #</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">SO date</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Ship to customer</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Source</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Status</th>
+                          <td>Column content</td>
+                        </tr>
+                        <tr>
+                          <td><label class="sr-only">Check me</label><input type="checkbox"></td>
+                          <th scope="row">Total Price</th>
+                          <td>Column content</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div></div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="table-controls">
+                        <button type="submit" class="btn btn-default">Ok</button>
+                        <button type="submit" class="btn btn-default">Reset</button>
+                        <button type="submit" class="btn btn-default">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- /.box-body -->
+            </div><!-- /.box -->
+          </div>
+        </div>
+
+    </div><!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+          Both of these plugins are recommended to enhance the
+          user experience. Slimscroll is required when using the
+          fixed layout. -->
+  </body>
+</html>

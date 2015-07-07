@@ -40,10 +40,7 @@
 /**************************************************************
 **************************Table styles***************************
 **************************************************************/
-table {
-  margin-top: 20px;
-}
-
+.table {margin:0px;}
 table thead .sorting, table thead .sorting-asc, table thead .sorting-desc, table thead .sorting-asc_disabled, table thead .sorting-desc_disabled {
   cursor: pointer;
   position: relative;
@@ -71,7 +68,36 @@ table thead .sorting-asc:after {
   content: "\e155";
 }
 
+.table-controls {
+  margin:10px 0px;
+}
 
+/*************************************************************
+**************************Table styles************************
+*****************************POP-UP***************************
+**************************************************************/
+.pop-up table tr td:first-child {
+  width:30px;
+  text-align: center;
+}
+.pop-up table th {
+  text-align: right;
+  width: 150px;
+}
+.pop-up table th, .pop-up table td {
+  vertical-align: middle !important;
+}
+.pop-up table th::after {
+  content: ':';
+}
+
+@media (max-width: 768px) {
+  .pop-up .form-inline .form-group {
+    display: inline-block !important;
+    margin-bottom: 0;
+    vertical-align: middle;
+    }
+}
 
 /*table links group*/
 /*table pagination*/
