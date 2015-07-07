@@ -76,13 +76,18 @@ table thead .sorting-asc:after {
 **************************Table styles************************
 *****************************POP-UP***************************
 **************************************************************/
+.pop-up .box {margin-bottom: 0px;}
+.pop-up table tr td:last-child,
+.pop-up table tr td:last-child form {
+  min-width:520px;
+}
 .pop-up table tr td:first-child {
   width:30px;
   text-align: center;
 }
 .pop-up table th {
   text-align: right;
-  width: 150px;
+  min-width: 150px;
 }
 .pop-up table th, .pop-up table td {
   vertical-align: middle !important;
@@ -90,13 +95,15 @@ table thead .sorting-asc:after {
 .pop-up table th::after {
   content: ':';
 }
-
-@media (max-width: 768px) {
-  .pop-up .form-inline .form-group {
-    display: inline-block !important;
-    margin-bottom: 0;
-    vertical-align: middle;
-    }
+.pop-up .form-group {
+  float:left;
+  margin-bottom:0px;
+  margin-right:5px;
+}
+.pop-up .form-group .form-control  {
+  display: inline-block !important;
+  width: auto !important;
+  vertical-align: middle !important;
 }
 
 /*table links group*/
