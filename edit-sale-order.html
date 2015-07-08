@@ -139,48 +139,189 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </section>
         <!-- Main content -->
         <section class="content">
-          <div class="row row-eq-height">
+          <div class="row">
             <div class="col-xs-6">
               <div class="box">
                 <div class="box-body">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <form class="form-horizontal">
-                        <div class="form-group">
-                          <label for="inputEmail3" class="col-xs-6 control-label">Email</label>
-                          <div class="col-xs-6">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="inputPassword3" class="col-xs-6 control-label">Password</label>
-                          <div class="col-xs-6">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.box-body -->
-              </div>
-            </div><!-- /.col -->
-            <div class="col-xs-6">
-              <div class="box">
-                <div class="box-body">
-                  <div class="item-information">
+                  <div class="edit-options">
                     <div class="item-group clearfix">
-                      <div class="col-xs-6">Date created</div>
-                      <div class="col-xs-6">827348234798</div>
+                      <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                      <div class="col-xs-6"><input type="email" class="form-control required" id="inputEmail3"><i class="fa fa-asterisk"></i></div>
                     </div>
                     <div class="item-group clearfix">
-                      <div class="col-xs-6">Date created</div>
-                      <div class="col-xs-6">827348234798</div>
+                      <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                      <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
+                    </div>
+                    <div class="item-group clearfix">
+                      <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Typical label</label></div>
+                      <div class="col-xs-6"><select id="someid" name="something" class="form-control">
+                        <option selected="selected" value="1">choose me</option>
+                        <option value="2">no, please choose me!</option>
+                        <option value="3">me please</option>
+                        <option value="4">i don't care</option>
+                      </select></div>
+                    </div>
+                    <div class="item-group clearfix">
+                      <div class="col-xs-6 text-label"><label for="blankCheckbox" class="control-label">Example checkbox</label></div>
+                      <div class="col-xs-6">
+                            <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                      </div>
+                    </div>
+                    <div class="item-group clearfix">
+                      <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Progress bar</label></div>
+                      <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-group clearfix">
+                      <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Write something in here</label></div>
+                      <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="col-xs-6">
+              <div class="box box-solid">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Description</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <dl class="dl-horizontal">
+                    <dt>Date created</dt>
+                    <dd>07/15/2015</dd>
+                    <dt>SO#</dt>
+                    <dd>SO-000946</dd>
+                    <dt>Created by</dt>
+                    <dd>Long Nguyen</dd>
+                  </dl>
+                </div><!-- /.box-body -->
+              </div>
+            </div>
           </div><!--/.row -->
+
+          <!-- Tabs -->
+          <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_1" data-toggle="tab">Tab 1</a></li>
+                  <li><a href="#tab_2" data-toggle="tab">Tab 2</a></li>
+                  <li><a href="#tab_3" data-toggle="tab">Tab 3</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="edit-options">
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control required" id="inputEmail3"><i class="fa fa-asterisk"></i></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Typical label</label></div>
+                            <div class="col-xs-6"><select id="someid" name="something" class="form-control">
+                              <option selected="selected" value="1">choose me</option>
+                              <option value="2">no, please choose me!</option>
+                              <option value="3">me please</option>
+                              <option value="4">i don't care</option>
+                            </select></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="blankCheckbox" class="control-label">Example checkbox</label></div>
+                            <div class="col-xs-6">
+                                  <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Progress bar</label></div>
+                            <div class="col-xs-6">
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                  <span class="sr-only">60% Complete</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Write something in here</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <div class="edit-options">
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control required" id="inputEmail3"><i class="fa fa-asterisk"></i></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Email</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Typical label</label></div>
+                            <div class="col-xs-6"><select id="someid" name="something" class="form-control">
+                              <option selected="selected" value="1">choose me</option>
+                              <option value="2">no, please choose me!</option>
+                              <option value="3">me please</option>
+                              <option value="4">i don't care</option>
+                            </select></div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="blankCheckbox" class="control-label">Example checkbox</label></div>
+                            <div class="col-xs-6">
+                                  <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Progress bar</label></div>
+                            <div class="col-xs-6">
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                  <span class="sr-only">60% Complete</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-group clearfix">
+                            <div class="col-xs-6 text-label"><label for="inputEmail3" class="control-label">Write something in here</label></div>
+                            <div class="col-xs-6"><input type="email" class="form-control" id="inputEmail3"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    The European languages are members of the same family. Their separate existence is a myth.
+                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                    new common language would be desirable: one could refuse to pay expensive translators. To
+                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                    and regular than that of the individual languages.
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+              </div>
+          <!-- End of Tabs -->
+
 
           <div class="row">
             <div class="col-xs-12">

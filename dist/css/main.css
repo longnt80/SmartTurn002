@@ -40,17 +40,44 @@
 /**************************************************************
 *************************form in box***************************
 **************************************************************/
-.box .form-group,
-.box .item-group {
+.item-group {
   margin-bottom: 5px;
 }
-.box .item-group div:first-child {
+.edit-options .item-group div.text-label {
   text-align:right;
-  padding-right:0px;
+  background-color: #ddd;
 }
-.box .item-group div:first-child::after {
+.edit-options .item-group div.text-label::after {
   content:':';
 }
+.edit-options .item-group label,
+.edit-options .progress {
+  margin-bottom:0px;
+  margin:7px 0px;
+}
+.edit-options .item-group input[type=checkbox] {
+  margin:10px 0px;
+}
+
+.edit-options .item-group .required {
+  display: inline-block;
+  width: 90%;
+  margin-right:5px;
+}
+i.fa-asterisk {
+  color:red;
+}
+
+.text-options .item-group div {
+  font-weight: bold;
+}
+.text-options .item-group div:first-child {
+  text-align:right;
+}
+.text-options .item-group div:first-child::after {
+  content:':';
+}
+
 
 
 /**************************************************************
