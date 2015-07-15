@@ -40,7 +40,7 @@
 /**************************************************************
 *************************form in box***************************
 **************************************************************/
-.item-group {
+/*.item-group {
   margin-bottom: 5px;
 }
 .edit-options .item-group div.text-label {
@@ -50,8 +50,14 @@
 .edit-options .item-group div.text-label::after {
   content:':';
 }
+.edit-options .item-group div.text-label dt,
+.edit-options .item-group div dd {
+  display:inline-block;
+}
 .edit-options .item-group label,
-.edit-options .progress {
+.edit-options .progress,
+.edit-options .item-group div.text-label dt,
+.edit-options .item-group div dd {
   margin-bottom:0px;
   margin:7px 0px;
 }
@@ -76,8 +82,36 @@ i.fa-asterisk {
 }
 .text-options .item-group div:first-child::after {
   content:':';
+}*/
+.dl-horizontal.even-width {
+  margin-bottom: 0px;
+}
+.dl-horizontal.even-width label {
+  margin-bottom:0px;
+}
+.dl-horizontal.even-width dt {
+  background-color:#ddd;
+  margin-bottom: 5px;
+  width: 48%;
+  padding-right:5px;
+}
+.dl-horizontal.even-width dt::after {
+  content: ':';
 }
 
+.dl-horizontal.even-width dd {
+  margin-left: 50%;
+}
+.dl-horizontal.even-width dt span,
+.dl-horizontal.even-width dd span,
+.dl-horizontal.even-width dt label,
+.dl-horizontal.even-width dd label {
+  display: inline-block;
+  padding:7px 0px;
+}
+.dl-horizontal.even-width dd input[type=checkbox] {
+  margin:10px 0px;
+}
 
 
 /**************************************************************
