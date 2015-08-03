@@ -103,7 +103,7 @@ i.fa-asterisk {
   margin-left: 50%;
 }
 .dl-horizontal.even-width dt span,
-.dl-horizontal.even-width dd span,
+.dl-horizontal.even-width dd > span,
 .dl-horizontal.even-width dt label,
 .dl-horizontal.even-width dd label {
   display: inline-block;
@@ -278,3 +278,26 @@ table thead .sorting-asc:after {
   display: inline-block;
   margin-right: 20px;
 }
+
+/************************************************
+testing navigation*************/
+/*.sidebar-menu>li>a {
+  background: url(../img/navigation/administration.gif) no-repeat top left;
+  border-left: none !important;
+}
+
+.sidebar-menu>li>a {
+  padding:6px 0px 6px 40px;
+}
+
+.sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+  background: transparent url(../img/navigation/administration.gif) no-repeat 0% 100% !important;
+}*/
+
+/*.sidebar-menu>li>a>svg {
+  margin-bottom: 4px;
+  height: 15px;
+  padding-right:5px;
+}*/
+
+.st0{fill:#ffffff;}

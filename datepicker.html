@@ -10,6 +10,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap date picker -->
+    <link href="plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
@@ -106,75 +108,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <ul class="treeview-menu">
                 <li class="active"><a href="#">Link in level 2</a></li>
                 <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
               </ul>
             </li>
             <li class="treeview">
-              <a class="" href="#"> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span></a>
+              <a href="#">
+                <span class="fa-stack">
+                  <i class="fa fa-truck fa-stack-lg"></i>
+                  <i class="fa fa-truck fa-stack-1x text-danger"></i>
+                </span>
+                <span>Multilevel</span>
+              </a>
               <ul class="treeview-menu">
                 <li><a href="#">Link in level 2</a></li>
                 <li><a href="#">Link in level 2</a></li>
@@ -197,33 +140,133 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header clearfix">
           <ol class="breadcrumb pull-left">
-            <li><a href="#">Level</a></li>
-            <li class="active">Here</li>
+            <li><a href="#">Ordering</a></li>
+            <li><a href="#">Sales Orders</a></li>
+            <li class="active">Edit Sales Order #: SO-000769</li>
           </ol>
-          <form class="form-inline pull-right">
-            <div class="form-group">
-              <label for="exampleInputName2" class="sr-only sr-only-focusable">Any name</label>
-              <select id="someid" name="something" class="form-control">
-                <option value="1">PO#</option>
-                <option value="2">1</option>
-                <option value="3">2</option>
-                <option value="4">3</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail2">Contain</label>
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-            </div>
-            <button type="submit" class="btn btn-default">Filter</button>
-            <button type="submit" class="btn btn-default">Show all</button>
-            <a href="#" title=""><i class='fa fa-search'></i></a>
-          </form>
         </section>
         <!-- Main content -->
         <section class="content">
           <div class="row">
+            <div class="col-xs-6">
+              <div class="box">
+                <div class="box-body">
+                  <dl class="dl-horizontal even-width">
+                    <dt><span>Date created</span></dt>
+                    <dd><span>07/15/2015</span></dd>
+                    <dt><span>SO#</span></dt>
+                    <dd><span>SO-000946</span></dd>
+                    <dt><span>Created by</span></dt>
+                    <dd><span>Long Nguyen</span></dd>
+                    <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                    <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                    <dt><span>SO#</span></dt>
+                    <dd><span>SO-000946</span></dd>
+                    <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
+                    <dd><input type="email" class="form-control" id="inputEmail3"></dd>
+                  </dl>
+                </div><!-- /.box-body -->
+              </div>
+            </div><!--/.col -->
+
+            <div class="col-xs-6">
+              <div class="box box-solid">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Description</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <dl class="dl-horizontal">
+                    <dt>Date created</dt>
+                    <dd>07/15/2015</dd>
+                    <dt>SO#</dt>
+                    <dd>SO-000946</dd>
+                    <dt>Created by</dt>
+                    <dd>Long Nguyen</dd>
+                  </dl>
+                </div><!-- /.box-body -->
+              </div>
+            </div><!--/.col -->
+          </div><!--/.row -->
+
+          <!-- Tabs -->
+          <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_1" data-toggle="tab">Tab 1</a></li>
+                  <li><a href="#tab_2" data-toggle="tab">Tab 2</a></li>
+                  <li><a href="#tab_3" data-toggle="tab">Tab 3</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <dl class="dl-horizontal even-width">
+                          <dt><span>Date created</span></dt>
+                          <dd><input type="text" type="text" class="form-control chonngay"></dd>
+                          <dt><span>SO#</span></dt>
+                          <dd>
+                            <div class="input-group input-append date chonngay">
+                              <input type="text" value="12-02-2012" class="form-control">
+                              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </dd>
+                          <dt><span>Created by</span></dt>
+                          <dd><span>Long Nguyen</span></dd>
+                          <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                          <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          <dt><span>SO#</span></dt>
+                          <dd><span>SO-000946</span></dd>
+                          <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
+                          <dd><input type="email" class="form-control" id="inputEmail3"></dd>
+                        </dl>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <dl class="dl-horizontal even-width">
+                          <dt><span>Date created</span></dt>
+                          <dd><span>07/15/2015</span></dd>
+                          <dt><span>SO#</span></dt>
+                          <dd><span>SO-000946</span></dd>
+                          <dt><span>Created by</span></dt>
+                          <dd><span>Long Nguyen</span></dd>
+                          <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                          <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          <dt><span>SO#</span></dt>
+                          <dd><span>SO-000946</span></dd>
+                          <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
+                          <dd><input type="email" class="form-control" id="inputEmail3"></dd>
+                        </dl>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    The European languages are members of the same family. Their separate existence is a myth.
+                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                    new common language would be desirable: one could refuse to pay expensive translators. To
+                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                    and regular than that of the individual languages.
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+              </div>
+          <!-- End of Tabs -->
+
+
+          <div class="row">
             <div class="col-xs-12">
               <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Items</h3>
+                </div>
                 <div class="box-body">
                     <div class="row">
                       <div class="table-controls clearfix">
@@ -331,44 +374,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </table>
                       </div>
                     </div>
-                      <div class="row">
-                        <div class="table-controls clearfix">
-                          <div class="col-sm-8">Date created: From <span>14</span> to <span>today</span></div>
-                          <div class="col-sm-4">
-                          <!-- table-pagination   -->
-                          <div class="table-pagination">
-                              <ul>
-                                  <li>
-                                    <a href="#" aria-label="Previous">
-                                      <i class="fa fa-fast-backward"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-label="Previous">
-                                      <i class="fa fa-step-backward"></i>
-                                    </a>
-                                  </li>
-                                  <li>1 of 1 pages</li>
-                                  <li>
-                                    <a href="#" aria-label="Next">
-                                      <i class="fa fa-step-forward"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-label="Next">
-                                      <i class="fa fa-fast-forward"></i>
-                                    </a>
-                                  </li>
-                                  <li>2 total rows</li>
-                                </ul>
-                          </div><!-- /.table-pagination -->
-                        </div>
-                        </div>
-                      </div>
+
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
             </div><!-- /.col -->
-          </div><!-- /.row -->
+          </div><!-- /.row --> <!-- End of table -->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="table-controls">
+                <button type="submit" class="btn btn-default">Save and Continue Editing</button>
+                <button type="submit" class="btn btn-default">Save</button>
+                <button type="submit" class="btn btn-default">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+                <p><i class="fa fa-asterisk"></i>: Required field</p>
+            </div>
+          </div>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 
@@ -391,11 +415,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- bootstrap date picker -->
+    <script src="plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/app.min.js" type="text/javascript"></script>
     <!-- page script -->
     <script type="text/javascript">
       $(function () {
+        //datepicker
+        $(".chonngay").datepicker({
+        });
         $("#example1").dataTable();
         $('#example2').dataTable({
           "bPaginate": true,
