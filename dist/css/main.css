@@ -293,11 +293,26 @@ testing navigation*************/
 .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
   background: transparent url(../img/navigation/administration.gif) no-repeat 0% 100% !important;
 }*/
+.sidebar-menu>li.item-sma>a>span {background-image: url(../img/navigation/home.png);}
+.sidebar-menu>li.item-ord>a>span {background-image: url(../img/navigation/ordering.png);}
+.sidebar-menu>li.item-inv>a>span {background-image: url(../img/navigation/inventory.png);}
+.sidebar-menu>li.item-rep>a>span {background-image: url(../img/navigation/reports.png);}
+.sidebar-menu>li.item-ope>a>span {background-image: url(../img/navigation/operation.png);}
+.sidebar-menu>li.item-adm>a>span {background-image: url(../img/navigation/administration.png);}
+.sidebar-menu>li.item-ful>a>span {background-image: url(../img/navigation/fulfillment.png);}
+.sidebar-menu>li.item-wav>a>span {background-image: url(../img/navigation/wave_fulfillment.png);}
+.sidebar-menu>li.item-rec>a>span {background-image: url(../img/navigation/receiving.png);}
+.sidebar-menu>li.item-kit>a>span {background-image: url(../img/navigation/kitting_manager.png);}
 
-/*.sidebar-menu>li>a>svg {
-  margin-bottom: 4px;
-  height: 15px;
-  padding-right:5px;
-}*/
+.sidebar-menu>li>a>span {
+  background-repeat: no-repeat;
+  padding-left:20px;
+  background-position: 0px 1px;
+}
 
-.st0{fill:#ffffff;}
+/*showing error*/
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}

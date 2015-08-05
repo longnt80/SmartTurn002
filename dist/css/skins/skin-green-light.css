@@ -90,6 +90,12 @@
   color: #ffffff;
   background: #7ac043;
 }
+/*change the color of sidebar menu icons by changing the position of the background*/
+.skin-green-light .sidebar-menu > li:hover > a > span,
+.skin-green-light .sidebar-menu > li.active > a > span {
+  background-position: 0px -26px;
+}
+
 .skin-green-light .sidebar-menu > li.active {
   border-left-color: #00a65a;
 }
