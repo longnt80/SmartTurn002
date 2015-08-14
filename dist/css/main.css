@@ -115,7 +115,7 @@
 .required input, .required textarea {
   padding-right:30px;
 }
-dd.required:after  {
+.required:after  {
   font-family: 'fontawesome';
   content:"\f069";
   position: absolute;
@@ -124,7 +124,7 @@ dd.required:after  {
   color: red;
   font-size:10px;
 }
-dd.required {
+.required {
   margin-bottom: 5px;
 }
 
