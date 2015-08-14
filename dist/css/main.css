@@ -41,15 +41,39 @@
 *************************form in box***************************
 **************************************************************/
 
-.dl-horizontal.even-width {
+.dl-horizontal {
   margin-bottom: 0px;
 }
-.dl-horizontal.even-width div.form-group {
+.dl-horizontal div.form-group {
   margin-bottom: 0px;
 }
 
-.dl-horizontal.even-width label {
+.dl-horizontal label {
   margin-bottom:0px;
+}
+
+.dl-horizontal dt,
+.dl-horizontal dd {
+  position: relative;;
+}
+.dl-horizontal dt::after {
+  content: ':';
+}
+
+
+.dl-horizontal dt > span,
+.dl-horizontal dd > span,
+.dl-horizontal dt label,
+.dl-horizontal dd > label {
+  display: inline-block;
+  padding:7px 0px;
+}
+.dl-horizontal dd input[type=checkbox] {
+  margin:10px 0px;
+}
+/***************** even-width ************************/
+.dl-horizontal.even-width dd {
+  margin-left: 50%;
 }
 .dl-horizontal.even-width dt {
   background-color:#ddd;
@@ -57,27 +81,18 @@
   width: 48%;
   padding-right:5px;
 }
-.dl-horizontal.even-width dt,
-.dl-horizontal.even-width dd {
-  position: relative;;
+/***************** onlyCheckbox ************************/
+.dl-horizontal.onlyCheckbox dd {
+  margin-left: 80%;
 }
-.dl-horizontal.even-width dt::after {
-  content: ':';
+.dl-horizontal.onlyCheckbox dt {
+  background-color:#ddd;
+  margin-bottom: 5px;
+  width: 78%;
+  padding-right:5px;
 }
 
-.dl-horizontal.even-width dd {
-  margin-left: 50%;
-}
-.dl-horizontal.even-width dt > span,
-.dl-horizontal.even-width dd > span,
-.dl-horizontal.even-width dt label,
-.dl-horizontal.even-width dd label {
-  display: inline-block;
-  padding:7px 0px;
-}
-.dl-horizontal.even-width dd input[type=checkbox] {
-  margin:10px 0px;
-}
+
 /****************** required items *******************/
 .form-group.required .fa {
   position: absolute;
@@ -86,6 +101,7 @@
   color: red;
   font-size:10px;
 }
+.form-group.required textarea {resize:vertical;}
 .form-group.required input, .form-group.required textarea {
   padding-right:30px;
 }

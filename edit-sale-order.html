@@ -139,6 +139,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </section>
         <!-- Main content -->
         <section class="content">
+
           <div class="row">
             <div class="col-xs-6">
               <div class="box">
@@ -157,6 +158,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div><!--/.col -->
           </div><!--/.row -->
+
+          <!-- Tabs -->
+          <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_1" data-toggle="tab">Tab 1</a></li>
+                  <li><a href="#tab_2" data-toggle="tab">Tab 2</a></li>
+                  <li><a href="#tab_3" data-toggle="tab">Tab 3</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <dl class="dl-horizontal onlyCheckbox">
+                          <div class="form-group">
+                            <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                            <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          </div>
+                          <div class="form-group">
+                            <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                            <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          </div>
+                          <div class="form-group">
+                            <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                            <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          </div>
+                          <div class="form-group">
+                            <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                            <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    nothing
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                    nothing
+                  </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+              </div>
+          <!-- End of Tabs -->
 
           <div class="row">
             <div class="col-xs-6">
@@ -397,7 +440,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
           <div class="row">
             <div class="col-sm-12">
-                <p><i class="fa fa-asterisk"></i>: Required field</p>
+                <p><i class="fa fa-asterisk danger"></i>: Required field</p>
             </div>
           </div>
         </section><!-- /.content -->
