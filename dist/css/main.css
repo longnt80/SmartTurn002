@@ -36,7 +36,13 @@
 .navbar .links-group ul li a {
   margin-right:10px;
 }
-
+/**************************************************************
+*************************box***************************
+**************************************************************/
+.nav-tabs-custom .box {
+  border-top-width: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
 /**************************************************************
 *************************form in box***************************
 **************************************************************/
@@ -83,12 +89,13 @@
 }
 /***************** onlyCheckbox ************************/
 .dl-horizontal.onlyCheckbox dd {
-  margin-left: 80%;
+  margin-left: 95%;
+  text-align: center;
 }
 .dl-horizontal.onlyCheckbox dt {
   background-color:#ddd;
   margin-bottom: 5px;
-  width: 78%;
+  width: 93%;
   padding-right:5px;
 }
 
