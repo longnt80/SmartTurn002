@@ -77,6 +77,9 @@
 .dl-horizontal dd input[type=checkbox] {
   margin:10px 0px;
 }
+.dl-horizontal dd textarea {
+  margin-bottom:5px;
+}
 /***************** even-width ************************/
 .dl-horizontal.even-width dd {
   margin-left: 50%;
@@ -101,16 +104,22 @@
 
 
 /****************** required items *******************/
-.form-group.required .fa {
+
+.required textarea {resize:vertical;}
+.required input, .required textarea {
+  padding-right:30px;
+}
+dd.required:after  {
+  font-family: 'fontawesome';
+  content:"\f069";
   position: absolute;
   right: 5px;
   top: 10px;
   color: red;
   font-size:10px;
 }
-.form-group.required textarea {resize:vertical;}
-.form-group.required input, .form-group.required textarea {
-  padding-right:30px;
+dd.required {
+  margin-bottom: 5px;
 }
 
 /*.item-group {
