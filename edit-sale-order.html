@@ -149,6 +149,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <dd class="required"><input type="email" class="form-control" id="inputEmail3" required="true"></dd>
                       <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
                       <dd class="required"><textarea class="form-control" rows="3" placeholder="Maximum length 200 characters"></textarea></dd>
+                      <dt><span>Nhiều control thì ko dùng label</span></dt>
+                      <dd>
+                        <form class="form-inline">
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="checkbox">
+                            <label for="abc" class="sr-only">Something</label>
+                            <input id="abc" type="checkbox">
+                          </div>
+                        </form>
+                      </dd>
                   </dl>
                 </div><!-- /.box-body -->
               </div>
@@ -173,7 +196,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           </div>
                           <div class="box-body">
                             <dl class="dl-horizontal onlyCheckbox">
-                                <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
+                                <dt><label class="sr-only" for="blankCheckbox" class="control-label">Example checkbox</label></dt>
                                 <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>
                                 <dt><label for="blankCheckbox" class="control-label">Example checkbox</label></dt>
                                 <dd><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></dd>

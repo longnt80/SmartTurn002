@@ -80,6 +80,12 @@
 .dl-horizontal dd textarea {
   margin-bottom:5px;
 }
+/***************** multiple controls inside dd ************/
+.dl-horizontal .form-inline .form-group input {
+    width: 50px;
+}
+
+
 /***************** even-width ************************/
 .dl-horizontal.even-width dd {
   margin-left: 50%;
