@@ -39,10 +39,30 @@
 /**************************************************************
 *************************box***************************
 **************************************************************/
-.nav-tabs-custom .box {
+.nav-tabs-custom .box,
+.box.hasProcess {
   border-top-width: 2px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
+
+/**************************************************************
+******************Custome Field - Add/Edit*********************
+******************box hasProcess*********************
+**************************************************************/
+.box.hasProcess.arrowDown {
+  margin-bottom:50px;
+}
+.box.hasProcess.arrowDown:after {
+    content: "\f175";
+    font-family: 'fontawesome';
+    position: absolute;
+    left: 50%;
+
+    font-size: 30px;
+    display: block;
+}
+
+
 /**************************************************************
 *************************form in box***************************
 **************************************************************/
@@ -219,10 +239,10 @@ table.dataTable tbody tr    {
 **************************Table styles************************
 *****************************POP-UP dialog***************************
 **************************************************************/
-.pop-up .box {margin-bottom: 0px;}
+
 .pop-up table tr td:last-child,
 .pop-up table tr td:last-child form {
-  min-width:520px;
+  min-width:500px;
 }
 .pop-up table tr td:first-child {
   width:30px;
@@ -251,9 +271,21 @@ table.dataTable tbody tr    {
 .pop-up .form-group input.form-control  {
   width: 150px !important;
 }
+.ui-dialog .ui-dialog-content   {
+    overflow: visible;
+}
+.ui-dialog .ui-dialog-content .table-controls   {
+    margin-bottom:10px;
+}
+.ui-dialog .ui-dialog-content p {
+        margin: 5px 0px;
+}
 
-/*table links group*/
-/*table pagination*/
+
+
+
+/*************table links group**************/
+/*************table pagination****************/
 .table-links-group ul,
 .table-pagination ul  {
   padding:0px;
