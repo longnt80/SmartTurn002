@@ -157,10 +157,12 @@
 .required:after, .required:after  {
   font-family: FontAwesome;
   content:"\f069";
+  /*font-family: 'Glyphicons Halflings';
+  content:"\2a";*/
   position: absolute;
   right: 5px;
   top: 10px;
-  color: red;
+  color: #d00606;
   font-size:10px;
 }
 .required, .required {
