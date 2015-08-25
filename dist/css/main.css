@@ -53,12 +53,21 @@
   margin-bottom:50px;
 }
 .box.hasProcess.arrowDown:after {
-    content: "\f175";
     font-family: 'fontawesome';
+    content: "\f175";
     position: absolute;
     left: 50%;
 
     font-size: 30px;
+    display: block;
+}
+.box.hasProcess.arrowRight:after {
+    font-family: 'fontawesome';
+    content: "\f178";
+    position: absolute;
+    top: 50%;
+    right:-25px;
+    font-size: 20px;
     display: block;
 }
 
@@ -99,16 +108,20 @@
 }
 .dl-horizontal dd textarea {
   margin-bottom:5px;
+  resize:vertical;
 }
 /***************** multiple controls inside dd ************/
 .dl-horizontal dd.multiple-controls .row {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -3px;
+  margin-right: -3px;
 }
 
 .dl-horizontal dd.multiple-controls .row .col-xs-4 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.dl-horizontal dd.multiple-controls textarea {
+  resize: both;
 }
 
 
@@ -137,7 +150,7 @@
 
 /****************** required items *******************/
 
-.required textarea {resize:vertical;}
+
 .required input, .required textarea {
   padding-right:17px;
 }
