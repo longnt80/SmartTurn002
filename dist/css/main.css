@@ -57,7 +57,7 @@
     content: "\f175";
     position: absolute;
     left: 50%;
-
+    bottom:-45px;
     font-size: 30px;
     display: block;
 }
@@ -71,6 +71,28 @@
     display: block;
 }
 
+.box.hasProcess .box-header {
+  text-align: center;
+  padding-bottom: 0px;
+}
+.box.hasProcess .box-title {
+  font-size: 16px;
+}
+.box.hasProcess .box-body {
+  padding-top: 0px;
+}
+.box.hasProcess .box-body .tapestry-palette {
+  border-top:1px solid #ddd;
+  padding-top:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.box.hasProcess .box-body .moveButtons {
+  padding-top:30px;
+}
+.box.hasProcess .box-body .form-group {
+  margin-bottom:0px;
+}
 
 /**************************************************************
 *************************form in box***************************
