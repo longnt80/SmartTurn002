@@ -1,3 +1,10 @@
+a {
+  color: #7ac043;
+}
+a:hover, a:active, a:focus {
+    color: #5a9a28;
+}
+
 .main-header {
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -90,6 +97,11 @@
 .box.hasProcess .box-body .moveButtons {
   padding-top:30px;
 }
+.box.hasProcess .box-body .moveButtons a.disabled {
+  color:#ccc;
+  cursor: not-allowed;
+}
+
 .box.hasProcess .box-body .form-group {
   margin-bottom:0px;
 }
