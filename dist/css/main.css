@@ -144,6 +144,9 @@ a:hover, a:active, a:focus {
   margin-bottom:5px;
   resize:vertical;
 }
+.dl-horizontal dd div.progress {
+  margin:6px 0px;
+}
 /***************** multiple controls inside dd ************/
 .dl-horizontal dd.multiple-controls .row {
   margin-left: -3px;
@@ -157,7 +160,10 @@ a:hover, a:active, a:focus {
 .dl-horizontal dd.multiple-controls textarea {
   resize: both;
 }
-
+.dl-horizontal dd.multiple-controls div.checkbox {
+  margin-top:0px;
+  margin-bottom:0px;
+}
 
 /***************** even-width ************************/
 .dl-horizontal.even-width dd {
@@ -188,9 +194,19 @@ a:hover, a:active, a:focus {
 .required input, .required textarea {
   padding-right:17px;
 }
-.required:after, .required:after  {
+.required:after,
+.required-01:after,
+.required-02:after,
+.required-03:after,
+.required-04:after,
+.required-05:after,
+.required-06:after,
+.required-07:after,
+.required-08:after,
+.required-09:after,
+.required-10:after
+{
   font-family: FontAwesome;
-  content:"\f069";
   /*font-family: 'Glyphicons Halflings';
   content:"\2a";*/
   position: absolute;
@@ -205,6 +221,18 @@ a:hover, a:active, a:focus {
 .required {
   position:relative;
 }
+
+.required:after {content:"\f069";}
+.required-01:after {content:"\f069 1";}
+.required-02:after {content:"\f069 2";}
+.required-03:after {content:"\f069 3";}
+.required-04:after {content:"\f069 4";}
+.required-05:after {content:"\f069 5";}
+.required-06:after {content:"\f069 6";}
+.required-07:after {content:"\f069 7";}
+.required-08:after {content:"\f069 8";}
+.required-09:after {content:"\f069 9";}
+.required-10:after {content:"\f069 10";}
 
 /*.item-group {
   margin-bottom: 5px;
