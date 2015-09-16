@@ -146,9 +146,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="box-body">
                   <dl class="dl-horizontal even-width">
                       <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
-                      <dd><div class="required er02"><input type="email" class="form-control" id="inputEmail3" required="true"></div></dd>
+                      <dd><div class="required hasError" errMsg="3"><input type="email" class="form-control" id="inputEmail3" required="true"></div></dd>
                       <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
-                      <dd><div class="required er03"><textarea class="form-control" rows="3" placeholder="Maximum length 200 characters"></textarea></div></dd>
+                      <dd><div errMsg="50"><textarea class="form-control" rows="3" placeholder="Maximum length 200 characters"></textarea></div></dd>
                       <dt><span>Nhiều control thì ko dùng label</span></dt>
                       <dd class="multiple-controls">
                           <div class="row">
@@ -182,7 +182,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <dd class="multiple-controls">
                           <div class="row">
                             <div class="col-xs-4">
-                              <div class="form-group">
+                              <div class="form-group hasError" errMsg="1">
                                 <label class="sr-only" for="exampleInputEmail3">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
                               </div>
@@ -218,7 +218,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                       </dd>
                       <dt><label for="inputEmail3" class="control-label">Write something in here</label></dt>
-                      <dd><div class="required-10"><textarea class="form-control" rows="3" placeholder="Maximum length 200 characters"></textarea></div></dd>
+                      <dd><div class="required"><textarea class="form-control" rows="3" placeholder="Maximum length 200 characters"></textarea></div></dd>
                       <dt><span>Nhiều control thì ko dùng label</span></dt>
                       <dd class="multiple-controls">
                           <div class="row">
@@ -229,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               </div>
                             </div>
                             <div class="col-xs-4">
-                              <div class="form-group required er01">
+                              <div class="form-group required hasError" errMsg="1">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
                                 <select class="form-control">
                                   <option>1</option>

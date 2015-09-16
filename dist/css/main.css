@@ -195,38 +195,26 @@ a:hover, a:active, a:focus {
   padding-right:17px;
 }
 
-
-
-.required:after
-{
+.required:after,
+.hasError::after {
   font-family: FontAwesome;
   /*font-family: 'Glyphicons Halflings';
   content:"\2a";*/
-  content:"\f069";
   position: absolute;
   right: 5px;
   top: 0px;
   color: red;
   font-size:10px;
 }
-.required {
+/*.required {
   margin-bottom: 5px;
 }
 .required {
   position:relative;
-}
-
-.required.er01:after {content:"\f069 1";}
-.required.er02:after {content:"\f069 2";}
-.required.er03:after {content:"\f069 3";}
-.required.er04:after {content:"\f069 4";}
-.required.er05:after {content:"\f069 5";}
-.required.er06:after {content:"\f069 6";}
-.required.er07:after {content:"\f069 7";}
-.required.er08:after {content:"\f069 8";}
-.required.er09:after {content:"\f069 9";}
-.required.er10:after {content:"\f069 10";}
-
+}*/
+.required:after {content: "\f069";}
+.hasError:after {content: attr(errMsg);}
+.required.hasError:after {content: "\f069" attr(errMsg);}
 
 
 
