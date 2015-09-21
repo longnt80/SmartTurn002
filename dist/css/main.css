@@ -96,6 +96,7 @@ a:hover, a:active, a:focus {
 }
 .box.hasProcess .box-body .moveButtons {
   padding-top:30px;
+  text-align: center;
 }
 .box.hasProcess .box-body .moveButtons a.disabled {
   color:#ccc;
