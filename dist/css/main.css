@@ -196,7 +196,7 @@ a:hover, a:active, a:focus {
 }
 
 .required:after,
-.hasError::after {
+.hasError:after {
   font-family: FontAwesome;
   /*font-family: 'Glyphicons Halflings';
   content:"\2a";*/
@@ -206,6 +206,12 @@ a:hover, a:active, a:focus {
   color: red;
   font-size:10px;
 }
+td.required:after,
+td.hasError:after {
+  right: 8px;
+  top: 5px;
+}
+
 /*.required {
   margin-bottom: 5px;
 }
@@ -244,8 +250,10 @@ table.dataTable thead .sorting_asc:after {
     content: "\f0de";
 }
 table.dataTable tbody tr td div.required,
-table.dataTable tbody tr td div.hasError {
-  position: relative;
+table.dataTable tbody tr td div.hasError,
+table.dataTable tbody tr td.required,
+table.dataTable tbody tr td.hasError {
+  position: relative; /*to keep :after element inside*/
 }
 /*table row select hint*/
 table.dataTable tbody tr    {
