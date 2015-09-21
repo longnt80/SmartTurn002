@@ -243,7 +243,10 @@ table.dataTable thead .sorting_desc:after {
 table.dataTable thead .sorting_asc:after {
     content: "\f0de";
 }
-
+table.dataTable tbody tr td div.required,
+table.dataTable tbody tr td div.hasError {
+  position: relative;
+}
 /*table row select hint*/
 table.dataTable tbody tr    {
     cursor: pointer;
