@@ -292,12 +292,12 @@ table.dataTable tbody tr    {
   margin-right:5px;
 }
 .pop-up .form-group .form-control  {
-  display: inline-block;
-  width: auto;
-  vertical-align: middle;
+  display: inline-block !important;
+  width: auto !important;
+  vertical-align: middle !important;
 }
 .pop-up .form-group input.form-control  {
-  width: 150px;
+  width: 150px !important;
 }
 .ui-dialog .ui-dialog-content   {
     overflow: visible;
