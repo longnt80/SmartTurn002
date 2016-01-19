@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
+<style type="text/css">
+.hidden 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+</style>
 </head>
 	<body>
-		<button aria-label="Home">&nbsp;</button>
+		<button aria-label="Home"><span class="hidden">Home</span></button>
 	</body>
 
 </html>
