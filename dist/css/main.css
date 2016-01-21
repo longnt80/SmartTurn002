@@ -499,3 +499,65 @@ table.dataTable tbody tr:hover,
 table.dataTable tbody tr.selected   {
     background-color:#d8edc8;
 }
+
+
+/***************************************************
+********************Specific Print pages************
+***************************************************/
+
+
+body.print {
+  background-color: #f9fafc;
+}
+/*body.print,
+body.print .wrapper {
+  overflow:visible !important;
+}*/
+body.print .btn-group {
+  margin: 30px 0px;
+}
+
+body.print .box {
+  width:auto;
+  border-top: none;
+  overflow-x:auto;
+}
+
+body.print .box table {
+  background-color: #fff;
+}
+
+body.print .column-field{
+  border-top: 1px solid #f4f4f4;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+body.print .column-field dl {
+  border-right: 1px solid #f4f4f4;
+  overflow:hidden;
+  margin-bottom: 0px;
+}
+
+body.print .column-field dt,
+body.print .column-field dd {
+  float:left;
+  width: 50%;
+  border-left: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  padding:2px;
+}
+
+body.print .column-field dt:after {
+  content:":";
+}
+
+body.print .column-field.no-border,
+body.print .column-field.no-border dl,
+body.print .column-field.no-border dt,
+body.print .column-field.no-border dd {
+  border:none;
+}
+body.print .column-field.no-border dt {
+  text-align: right;
+}
