@@ -307,13 +307,14 @@ table.dataTable tbody tr    {
   margin-bottom:0px;
   margin-right:5px;
 }
+
 .pop-up .form-group .form-control  {
-  display: inline-block !important;
-  width: auto !important;
-  vertical-align: middle !important;
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
 }
 .pop-up .form-group input.form-control  {
-  width: 150px !important;
+  width: 150px;
 }
 .ui-dialog .ui-dialog-content   {
     overflow: visible;
@@ -324,6 +325,12 @@ table.dataTable tbody tr    {
 .ui-dialog .ui-dialog-content p {
         margin: 5px 0px;
 }
+
+/**overlay of dialog #popup #pop-up *************/
+.ui-widget-overlay {
+  z-index:1049;
+}
+
 
 
 
@@ -455,11 +462,14 @@ testing navigation*************/
   background-position: 0px 1px;
 }
 
-/* showing error - Added by Hai Le */
+/* Added by Hai Le */
+/* showing error */
 .validation-summary-errors { color: red; font-weight: bold; display:inline-block; margin-left:3px;}
 .validation-summary-errors ul { padding: 0; margin-bottom:0px;}
 .validation-summary-errors li { list-style-type: none; }
-/*End showing error */
+/* datatables.net */
+.datatable-scroll { overflow-x: auto; overflow-y: visible; }/*overflow:auto;*/
+/* End Added by Hai Le */
 
 @media only screen and (max-width: 1160px) {
     .navbar .navbar-form select#SelectedWarehouseID {
@@ -499,6 +509,94 @@ table.dataTable tbody tr:hover,
 table.dataTable tbody tr.selected   {
     background-color:#d8edc8;
 }
+
+/***************************************************
+********************Searchable Dropdown*************
+***************************************************/
+.custom-combobox {
+    position: relative;
+    display: inline-block;
+  }
+
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+/*--------------------------------------------------------------------------------------------
+      Print
+--------------------------------------------------------------------------------------------*/
+
+@media print {
+    @page {
+        size: letter landscape;
+        margin: 0cm;
+    }
+
+    .sidebar-menu {
+        display:none;
+    }
+
+    .main-header {
+        display: block;
+    }
+
+    .datatable-scroll table {
+        width: 100% !important;
+        display: table !important;
+    }
+
+    .skin-green-light .content-wrapper, .skin-green-light .main-footer {
+        border-left: 0px solid #d2d6de;
+    }
+
+    .no-print, .main-sidebar, .left-side, .main-header, .content-header {
+        display: block !important;
+    }
+
+    .content-wrapper, .right-side, .main-footer {
+        margin-left: 0!important;
+        min-height: 0!important;
+        -webkit-transform: translate(0, 0) !important;
+        -ms-transform: translate(0, 0) !important;
+        -o-transform: translate(0, 0) !important;
+        transform: translate(0, 0) !important;
+    }
+
+    .fixed .content-wrapper, .fixed .right-side {
+        padding-top: 0!important;
+    }
+
+    .invoice {
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .invoice-col {
+        float: left;
+        width: 33.3333333%;
+    }
+
+    .table-responsive {
+        overflow: auto;
+    }
+
+    .table-responsive > .table tr th, .table-responsive > .table tr td {
+        white-space: normal!important;
+    }    
+
+}
+
 
 
 /***************************************************
