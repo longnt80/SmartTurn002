@@ -561,3 +561,15 @@ body.print .column-field.no-border dd {
 body.print .column-field.no-border dt {
   text-align: right;
 }
+
+@media print {
+  @page {
+   size: A4 landscape;
+  }
+  body.print .box {
+    overflow:hidden;
+  }
+  body.print .btn-group {
+    display:none;
+  }
+}
